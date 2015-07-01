@@ -61,8 +61,8 @@ class CanvasButton(Canvas):
         self.canvas_color = canvas_color
 
         # set shadow containing canvas width and height
-        self.width_z = self.canvas_width + (self.z * 2) + 1
-        self.height_z = self.canvas_height + (self.z * 2) + 1
+        self.width_z = self.canvas_width + (self.z * 1.75)
+        self.height_z = self.canvas_height + (self.z * 2)
 
         # sets inner canvas display text and color
         self.text = text
@@ -75,7 +75,7 @@ class CanvasButton(Canvas):
 
         # create canvas for the shadow
         self.shadow_canvas = Canvas(self.parent, width=self.width_z, height=self.height_z,
-                                    bg='white', highlightthickness=0, bd=0)
+                                    bg='dark grey', highlightthickness=0, bd=0)
 
         # create window that will hold the shadow canvas
         self.shadow_window = self.parent.create_window(self.x, self.y, window=self.shadow_canvas)
