@@ -99,6 +99,7 @@ class CanvasButton(Canvas):
 test_1 = CanvasButton(canvas_color='red', text_color='yellow')
 test_2 = CanvasButton(x=200, y=100, z=10, canvas_color='blue', text_color='yellow', canvas_width=100)
 test_3 = CanvasButton(x = 100, y= 200, z=5, canvas_color='maroon', text_color='pink')
+test_4 = CanvasButton(x=300, y=300, z=20, canvas_width=200, canvas_height=250, canvas_color='orange')
 
 
 root.mainloop()
